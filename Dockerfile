@@ -1,5 +1,5 @@
 FROM ghcr.io/gramps-project/grampsweb:latest
-RUN mkdir -p /data /data/users /data/index /data/thumbnail_cache /data/cache /data/secret /data/db /data/media
+RUN mkdir -p /data /data/users /data/index /data/thumbnail_cache /data/cache /data/secret /data/db /data/media /root/.gramps/grampsdb
 RUN ln -s /data/users /app/users
 RUN ln -s /data/index /app/indexdir
 RUN ln -s /data/thumbnail_cache /app/thumbnail_cache
